@@ -1,0 +1,60 @@
+@import 'vars.scss';
+
+// Function px to rem
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+@mixin flexCentred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin positionCetner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin heading($size: 48px, $color: $text-dark-color) {
+  font-family: $primary-font;
+  font-size: rem($size);
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin text($size: 16px, $color: $text-secondary-color, $weight: 400) {
+  font-family: $secondary-font;
+  font-size: rem($size);
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin cleanList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Short property for width and height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin mainContainer() {
+  width: $container-width;
+  margin: 0 auto;
+}

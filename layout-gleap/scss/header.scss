@@ -1,0 +1,52 @@
+.container {
+  @include mainContainer;
+}
+
+.header {
+   @include flexCentred;
+   height: 62px;
+}
+
+.menu__list {
+  @include cleanList;
+  @include flexAround;
+
+  font-family: $secondary-font;
+}
+
+.menu__list-item {
+  padding-right: 24px;
+  
+  &:first-child {
+    padding-left: 24px;
+  }
+}
+
+.menu__list-link {
+  color: $black-color;
+
+  font-size: $root-font-size;
+  line-height: 19px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.user-nav {
+  margin-left: auto;
+}
+
+.user-nav__link {
+  padding: 0 20px;
+
+  color: $acent-color;
+
+  line-height: 19px;
+  text-transform: capitalize;
+  text-align: center;
+
+  background-color: $acent-light-color;
+  border-radius: 56px;
+  border: none;
+
+  cursor: pointer;
+}
