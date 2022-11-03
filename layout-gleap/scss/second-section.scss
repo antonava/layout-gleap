@@ -28,20 +28,20 @@
 }
 
 .section__info-demonsrtation {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
 }
 
 .section__info-demonsrtation-block {  
   background-color: $white-color;
   border-radius: 24px;
-
-  width: calc((100% - 24px) / 2);
 }
 
 .section__info-demonsrtation-title {
-  width: 58%;
+  width: 70%;
   padding: 32px;
 
   font-family: $primary-font;
