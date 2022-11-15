@@ -1,0 +1,219 @@
+.container {
+  @include mainContainer;
+}
+
+.advantages-container {
+  display: flex;
+  align-items: baseline;
+
+  margin-bottom: 64px;
+}
+
+.adv__item {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-right: 34px;  
+  }
+
+  & > img {
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  & > div {
+    text-align: center;
+  }
+}
+
+.adv__item-title {
+  margin: 16px 0 7px;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: $black-color;
+}
+
+.adv__item-subtitle {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $grey-color;
+}
+
+.adv_container {
+  display: flex;
+  gap: 24px;
+}
+
+// pricing section
+.pricing-container {
+  margin-bottom: 64px;
+}
+
+.pricing__title {
+  margin: 125px 0 45px;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+
+  text-align: center;
+  color: $black-color;
+}
+
+.pricing__info {
+  display: flex;
+}
+
+.pricing__info-item {
+  padding: 24px 24px 40px;
+  border: 1px solid  #DEE1EA;
+  border-radius: 24px;
+
+  & > div{
+    font-family: $primary-font;
+  }
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &:hover {
+      border-color: $acent-color;
+      background-color: $acent-color;
+
+    .pricing__info-item-title, 
+    .pricing__info-item-subtitle,
+    .pricing__info-item-addInfo {
+      color: $white-color;
+    }
+
+    .pricing-btn {
+      color: $acent-color;
+      background-color: $white-color;
+    }
+  }
+
+}
+
+.pricing__info-item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  text-align: center;
+
+  color: $black-color;
+}
+
+.pricing__info-item-subtitle {
+  margin: 20px 0 13px;
+
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 68px;
+
+  text-align: center;
+
+  color: $acent-color;
+}
+
+.pricing__info-item-addInfo {
+  margin: 24px 0 13px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-align: center;
+
+  color: $grey-color;
+}
+
+.pricing-btn {
+  @include sectionBtn;
+
+  width: 100%;
+  margin-top: 40px;
+}
+
+.add-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 18px;
+
+  padding: 12px 16px;
+
+  background-color: $grey-light-color;
+  border-radius: 16px;
+}
+
+.add-info-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $black-color;
+}
+
+.add-info-subtitle {
+  justify-self: end;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $grey-color;
+}
+
+.contact-container {
+  width: 28%;
+  margin: 0 auto;
+
+  font-family: $primary-font;
+  text-align: center;
+}
+
+.contact-container-title {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 36px;
+
+  color: $black-color;
+}
+
+.contact-container-subtitle {
+  margin: 16px 0 40px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: $grey-color;
+}
+
+.contact-btn {
+  padding: 4px 34px;
+
+  color: $acent-color;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 14px;
+  text-transform: capitalize;
+  text-align: center;
+
+  background-color: $acent-light-color;
+  border-radius: 56px;
+  border: none;
+
+  cursor: pointer;
+}
