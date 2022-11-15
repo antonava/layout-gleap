@@ -58,3 +58,19 @@
   width: $container-width;
   margin: 0 auto;
 }
+
+@mixin sectionBtn($background-color: $acent-color, $color: $white-color) {
+  padding: 4px 32px;
+
+  border: none;
+  border-radius: 56px;
+
+  color: $color;
+  background-color: $background-color;
+
+  line-height: 19px;
+  text-transform: capitalize;
+  text-align: center;
+
+  cursor: pointer;
+}

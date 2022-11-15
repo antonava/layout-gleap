@@ -1,0 +1,21 @@
+.container {
+  @include mainContainer;
+}
+
+.third-section {
+  background-color: $black-color;
+  margin-bottom: 58px;
+}
+
+.demonstration-container__title {
+  width: 48%;
+  color: $white-color;
+  text-align: center;
+  margin: 0 auto;
+  padding: 61px 0 51px;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 54px;
+}
